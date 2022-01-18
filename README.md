@@ -1,7 +1,10 @@
 # Zoom Express API
 Use of this sample app is subject to our Terms of Use.
 
-This is a node.js/Express Server that acts as a backend APi server. This sServer can recieve API requests and forward them to the Zoom RESTful API and return the response.
+This is a node.js/Express Server that acts as a backend APi server. 
+This Server can recieve API requests and forward them to the Zoom RESTful API and return the response.
+
+[Zoom API Dcumentation](https://marketplace.zoom.us/docs/api-reference/introduction)
 
 ## Installation
 To get started, clone the repo:
@@ -68,7 +71,9 @@ The API will return a specific User
 
 ### Delete a User
 Make a `POST` request to `http://localhost:3000/api/users/{userID}?action=delete` OR your deployed URL
+
 The API will delete the specified user
+
 Additional Query Parameters
 ```
 transfer_email={emailAddress}
