@@ -36,6 +36,10 @@ Save and Close `.env`
 Start the Server
 `npm start`
 
+### OR
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Usage
 
 ### Get JWT token
