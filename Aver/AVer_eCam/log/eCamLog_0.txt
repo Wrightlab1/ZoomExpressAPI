@@ -1,0 +1,74 @@
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:40 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:41 CameraControl Error: IOCreatePlugInInterfaceForService returned 0xe00002be.
+21.08.08 16:34:42 Warning: QObject::connect: No such slot UiCamera::onSetEnableOpenGL(int)
+21.08.08 16:34:42 Warning: QObject::connect:  (sender name:   'UiSettingForm')
+21.08.08 16:34:42 Warning: QObject::connect:  (receiver name: 'UiCamera')
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 SW Version:  "SW 1.4.1090.97"
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 SW Version:  "SW 1.4.1090.97"
+21.08.08 16:34:42 Warning: QObject::connect: No such slot UiCamera::onGetEnableOpenGL()
+21.08.08 16:34:42 Warning: QObject::connect:  (sender name:   'UiSettingForm')
+21.08.08 16:34:42 Warning: QObject::connect:  (receiver name: 'UiCamera')
+21.08.08 16:34:42 Warning: QObject::connect: No such slot UiCamera::onSetEnableOpenGL(int)
+21.08.08 16:34:42 Warning: QObject::connect:  (sender name:   'UiSettingForm')
+21.08.08 16:34:42 Warning: QObject::connect:  (receiver name: 'UiCamera')
+21.08.08 16:34:42 Warning: QObject::connect: No such slot UiCamera::onSetEnableOpenGL(int)
+21.08.08 16:34:42 Warning: QObject::connect:  (sender name:   'UiSettingForm')
+21.08.08 16:34:42 Warning: QObject::connect:  (receiver name: 'UiCamera')
+21.08.08 16:34:42 SW Version:  "SW 1.4.1090.97"
+21.08.08 16:34:42 SW Version:  "SW 1.4.1090.97"
+21.08.08 16:34:42 UiSettingForm::onDeviceAdd()
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:42 Warning: libpng warning: iCCP: known incorrect sRGB profile
+21.08.08 16:34:43 recv: 10;
+21.08.08 16:34:43 send: 10;1.4.1090.97
+21.08.08 16:34:43 recv: 20;
+21.08.08 16:34:43 send: 20;
+21.08.08 16:34:43 Download of http://download.aver.com/USBCam/check4Update/eCamUpdate.cfg succeeded (saved to eCamUpdate.cfg)
+

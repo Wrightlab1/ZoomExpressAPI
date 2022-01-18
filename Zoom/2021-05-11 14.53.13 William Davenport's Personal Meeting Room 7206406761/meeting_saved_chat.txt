@@ -1,0 +1,2 @@
+14:48:29 From Khaled to Everyone : https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingcreate
+14:50:30 From Umer to Everyone : Id 822 0480 4870 of the meeting where a user is able to join the meeting directly from zoom client without registering

@@ -1,0 +1,18 @@
+[08-06 11:25:08.652]Debg: This is the only instance
+[08-06 11:25:10.279]Warn: libpng warning: iCCP: known incorrect sRGB profile
+[08-06 11:25:11.311]Warn: libpng warning: iCCP: known incorrect sRGB profile
+[08-06 11:25:11.360]Debg: Tcp command connection listen result: true
+[08-06 11:25:11.361]Debg: Tcp stream connection listen result: true
+[08-06 11:25:11.417]Warn: libpng warning: iCCP: known incorrect sRGB profile
+[08-06 11:25:11.417]Warn: libpng warning: iCCP: known incorrect sRGB profile
+[08-06 11:25:14.880]Debg: command socket connected!
+[08-06 11:25:14.880]Debg: send: 10;
+[08-06 11:25:14.881]Debg: stream socket connected!
+[08-06 11:25:16.527]Debg: recv: 10;1.4.1090.97
+[08-06 11:25:16.527]Debg: send: 20;
+[08-06 11:25:16.572]Debg: recv: 20;
+[08-06 11:25:16.572]Debg: First time camera info completed, start to connect WebSocket
+[08-06 11:25:16.572]Debg: Starting check timer!
+[08-06 11:31:00.982]Debg: recv: 23;
+[08-06 11:31:00.983]Debg: send: 20;
+[08-06 11:31:00.983]Debg: recv: 20;

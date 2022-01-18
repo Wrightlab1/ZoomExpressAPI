@@ -1,0 +1,29 @@
+10:09:15 From Fernando Rios to Everyone:
+	All information shared in this meeting will remain confidential. The meeting is being recorded and shared after the call.
+10:11:12 From Jeremy Wright to Everyone:
+	http 400
+10:11:13 From Jeremy Wright to Everyone:
+	Error Code: 2034
+	Your request to add a new {0} user could not be approved at this time because your account has reached the permitted maximum number of {1} users. Please purchase additional licenses or contact the Zoom support team to provision additional users in your account.
+10:14:01 From Ramesh Nagul to Everyone:
+	it says my internet connection is unstable
+10:14:07 From Ramesh Nagul to Everyone:
+	so turning video off
+10:20:31 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/api-reference/zoom-api/users/switchuseraccount
+10:23:39 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/api-reference/zoom-api/reports/reportmeetings
+10:24:06 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/api-reference/zoom-api/reports/reportmeetingparticipants
+10:24:50 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/api-reference/webhook-reference/meeting-events/meeting-ending
+10:25:42 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/api-reference/webhook-reference/meeting-events/participant-joined-meeting
+10:25:49 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/api-reference/webhook-reference/meeting-events/participant-left
+10:27:52 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingcreate
+10:28:30 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingregistrantcreate
+10:37:42 From Jeremy Wright to Everyone:
+	https://marketplace.zoom.us/docs/sdk/native-sdks/web
