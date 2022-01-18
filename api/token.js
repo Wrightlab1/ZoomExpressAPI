@@ -15,10 +15,10 @@ router.use(function timelog (req, res, next) {
   router.get('/', function (req, res) {
     //Create JWT
     const payload = {
-      iss: process.env.KEY,
+      iss: process.env.API_KEY,
       exp: ((new Date()).getTime() + 5000)
   };
-    const token = jwt.sign(payload, process.env.SECRET);
+    const token = jwt.sign(payload, process.env.API_SECRET);
     res.json({token : token})
   })
 

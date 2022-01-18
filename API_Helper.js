@@ -9,10 +9,10 @@ module.exports = {
     console.log(`API Call sent to ${path}`)
     //Create JWT
     const payload = {
-      iss: process.env.KEY,
+      iss: process.env.API_KEY,
       exp: ((new Date()).getTime() + 5000)
   };
-    const token = jwt.sign(payload, process.env.SECRET);
+    const token = jwt.sign(payload, process.env.API_SECRET);
 
 //SEND REQUEST
 var postData = JSON.stringify(data[0]);
