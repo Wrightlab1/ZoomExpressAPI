@@ -32,3 +32,28 @@ Save and Close `.env`
 
 Start the Server
 `npm start`
+
+## Usage
+
+### Get JWT token
+Make a `GET` request to `http://localhost:3000/api/token` OR your deployed URL
+The API will return the following JSON object
+```
+{"Token":"yourJSONWebToken"}
+```
+
+### Create a user
+Make a `POST` request to `http://localhost:3000/api/users` OR your deployed URL
+The `BODY` should contain the following JSON Object
+```
+{
+  "action": "custCreate",
+  "user_info": {
+    "email": "example@example.com",
+    "type": 1,
+    "first_name": "Terry",
+    "last_name": "Jones"
+  }
+}
+```
+The API will return the new User object
