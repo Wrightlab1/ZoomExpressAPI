@@ -1,0 +1,7 @@
+{
+  "name": "Zoom Express API",
+  "description": "An API backend for Zoom",
+  "repository": "https://github.com/Wrightlab1/ZoomExpressAPI",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static", "Zoom", "API"]
+}
