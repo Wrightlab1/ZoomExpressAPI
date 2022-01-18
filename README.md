@@ -58,15 +58,15 @@ The `BODY` should contain the following JSON Object
 ```
 The API will return the new User object
 
-###List Users
+### List Users
 Make a `GET` request to `http://localhost:3000/api/users` OR your deployed URL
 The API will return a list of Users
 
-###Get a User
+### Get a User
 Make a `GET` request to `http://localhost:3000/api/users/{userID}` OR your deployed URL
 The API will return a specific User
 
-###Delete a User
+### Delete a User
 Make a `POST` request to `http://localhost:3000/api/users/{userID}?action=delete` OR your deployed URL
 The API will delete the specified user
 Additional Query Parameters
