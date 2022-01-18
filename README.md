@@ -1,7 +1,7 @@
-# Zoom Meeting SDK Sample Angular
+# Zoom Express API
 Use of this sample app is subject to our Terms of Use.
 
-This repo is an Angular app generated via the Angular CLI that uses the Zoom Meeting SDK to start and join Zoom meetings and webinars.
+This is a node.js/Express Server that acts as a backend APi server. This sServer can recieve API requests and forward them to the Zoom RESTful API and return the response.
 
 ## Installation
 To get started, clone the repo:
