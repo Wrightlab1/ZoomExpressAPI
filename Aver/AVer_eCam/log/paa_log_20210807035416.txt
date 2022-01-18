@@ -1,2 +1,0 @@
-[08-07 03:54:16.572]Debg: cmd socket disconnected!
-[08-07 03:54:16.573]Debg: stream socket disconnected!
