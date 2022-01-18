@@ -15,38 +15,37 @@ router.use(bodyParser.json({ extended: true }));
 
 //List Users
   router.get('/', function (req, res) {
-    console.log('list users')
     api_helper.make_API_call('/users', 'GET')
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
-//Get  a User
+//Get  a User http://localhost:3000/api/users/?id={userID}}
   router.get('/:id', function (req, res) {
-    console.log('list users')
-    api_helper.make_API_call(`/users/${req.query.id}`, 'GET')
+    const id = req.params.id
+    console.log(id)
+    api_helper.make_API_call(`/users/${id}`, 'GET')
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
 //Create a User
   router.post('/', function (req, res) {
-    console.log(`Body: ${req.body}`)
     const data = req.body
     api_helper.make_API_call('/users', 'POST', data)
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
-//Update a User
+//Update a User http://localhost:3000/api/users/{userID}}
   router.patch('/:id', function (req, res) {
     const data = req.body
-    api_helper.make_API_call(`/users/${req.query.id}`, 'PATCH', data)
+    api_helper.make_API_call(`/users/${req.params.id}`, 'PATCH', data)
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
-  
-//Delete a User
+//Delete a User http://localhost:3000/api/users/{userID}}
 router.delete('/:id', function (req, res) {
   const data = req.body
-  api_helper.make_API_call(`/users/${req.query.id}`, 'DELETE', data)
+  const id = req.params.id
+  api_helper.make_API_call(`/users/${id}?action=delete`, 'DELETE', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })

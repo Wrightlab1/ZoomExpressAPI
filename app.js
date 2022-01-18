@@ -6,7 +6,7 @@ const token = require('./api/token.js')
 
 
 const app= express()
-const port = 3000
+const port = 3000 || process.env.PORT
 
 //Routes
 

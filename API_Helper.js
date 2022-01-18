@@ -3,10 +3,13 @@ const https = require('https')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
 
+
+
+
 module.exports = {
-  make_API_call : function(path,method, ...data) {
+  make_API_call : function(path,method,data) {
     
-    console.log(`API Call sent to ${path}`)
+    console.log(`API Call sent to https://api.zoom.us/v2${path}`)
     //Create JWT
     const payload = {
       iss: process.env.API_KEY,
@@ -15,7 +18,7 @@ module.exports = {
     const token = jwt.sign(payload, process.env.API_SECRET);
 
 //SEND REQUEST
-var postData = JSON.stringify(data[0]);
+  
 const options = {
   host: 'api.zoom.us',
   path: `/v2${path}`,
@@ -52,6 +55,15 @@ req.on('error', function(err) {
   // This is not a "Second reject", just a different sort of failure
   reject(err);
 });
-req.write(postData);
+
+if (data) {
+  const postData = JSON.stringify(data);
+  req.write(postData);
+}
+
+
 // IMPORTANT
+
+
+
 req.end();})}}
