@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require("express")
 const mongoose = require("mongoose")
 const users = require('./api/users.js')
+const meetings = require('./api/meetings')
 const token = require('./api/token.js')
 
 
@@ -12,6 +13,7 @@ const port = 3000 || process.env.PORT
 
 //include routes
 app.use('/api/users', users)
+app.use('/api/meetings', meetings)
 app.use('/api/token', token)
 
 //Connect DB
