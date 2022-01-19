@@ -15,7 +15,7 @@ router.use(bodyParser.json({ extended: true }));
 
 //Get a Meeting
 router.get('/:meetingid', function (req, res) {
-  api_helper.make_API_call(`/users/${req.id}/meetings`, 'GET', data)
+  api_helper.make_API_call(`/users/${req.meetingid}/meetings`, 'GET', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })

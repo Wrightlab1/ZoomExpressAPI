@@ -73,3 +73,14 @@ This application forwards the `Body` of the request to the appropriate Zoom endp
 | List Meeting Registrants |GET |`http://localhost:3000/api/meetings/{meetingid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingregistrants)|
 | Get a Meeting Registrant |GET |`http://localhost:3000/api/meetings/{meetingid}/registrants/{registrantid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingregistrantget)|
 
+### Webinars
+| Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
+| ------------- |-------|----------------------------------------------------------|--------------------------------------------------------------------------|
+| Create a Webinar |POST   |`http://localhost:3000/api/webinars/{userid}`          |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarcreate)|
+| Get a Webinar    |GET    |`http://localhost:3000/api/webinars/{webinarid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-apiwebinarss/webinar)     |
+| Update a Webinar |PATCH  |`http://localhost:3000/api/webinars/{webinarid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarupdate)      |
+| Delete a Webinar |DELETE |`http://localhost:3000/api/webinars/{webinarid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinardelete)|
+| Add a Webinar Registrant |POST |`http://localhost:3000/api/webinars/{webinarid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarregistrantcreate)|
+| Delete a Webinar Registrant |DELETE |`http://localhost:3000/api/webinars/{webinarid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarregistrantdelete)|
+| List Webinar Registrants |GET |`http://localhost:3000/api/webinars/{webinarid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarregistrants)|
+| Get a Webinar Registrant |GET |`http://localhost:3000/api/webinars/{webinarid}/registrants/{registrantid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarregistrantget)|
