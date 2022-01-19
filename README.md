@@ -42,47 +42,29 @@ Start the Server
 
 ## Usage
 
-### Get JWT token
-Make a `GET` request to `http://localhost:3000/api/token` OR your deployed URL
-The API will return the following JSON object
-```
-{"Token":"yourJSONWebToken"}
-```
+### Request Body
+This application forwards the `Body` of the request to the appropriate Zoom endpoint. Follow the requirements of the Zoom API to create the `Body` of any request
 
-### Create a user
-Make a `POST` request to `http://localhost:3000/api/users` OR your deployed URL
-The `BODY` should contain the following JSON Object
-```
-{
-  "action": "custCreate",
-  "user_info": {
-    "email": "example@example.com",
-    "type": 1,
-    "first_name": "Terry",
-    "last_name": "Jones"
-  }
-}
-```
-The API will return the new User object
+### Token
+| Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
+| ------------- |-------|----------------------------------------------------------|--------------------------------------------------------------------------|
+| Get JWT Token |GET    |`http://localhost:3000/api/token`                         |(https://marketplace.zoom.us/docs/api-reference/using-zoom-apis#using-jwt)|
 
-### List Users
-Make a `GET` request to `http://localhost:3000/api/users` OR your deployed URL
-The API will return a list of Users
+### Users
 
-### Get a User
-Make a `GET` request to `http://localhost:3000/api/users/{userID}` OR your deployed URL
-The API will return a specific User
+| Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
+| ------------- |-------|----------------------------------------------------------|--------------------------------------------------------------------------|
+| Create a User |POST   |`http://localhost:3000/api/users`                         |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/usercreate)|
+| List Users    |GET    |`http://localhost:3000/api/users`                         |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/users)     |
+| Get a User    |GET    |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/user)      |
+| Update a User |PATCH  |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userupdate)|
+| Delete a User |DELETE |`http://localhost:3000/api/users/{userID}?action=delete`  |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userdelete)|
 
-### Delete a User
-Make a `POST` request to `http://localhost:3000/api/users/{userID}?action=delete` OR your deployed URL
 
-The API will delete the specified user
-
-Additional Query Parameters
-```
-transfer_email={emailAddress}
-transfer_meeting = {boolean}
-transfer_webinar = {boolean}
-transfer_recording = {boolean}
-```
-for more info on deleting user see [Link to Zoom API Documentation](https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userdelete)
+### Meetings
+| Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
+| ------------- |-------|----------------------------------------------------------|--------------------------------------------------------------------------|
+| Create a Meeting |POST   |`http://localhost:3000/api/meetings/{userid}`          |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingcreate)|
+| Get a Meeting    |GET    |`http://localhost:3000/api/meetings/{meetingid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meeting)     |
+| Update a Meeting |PATCH  |`http://localhost:3000/api/meetings/{meetingid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingupdate)      |
+| Delete a Meeting |DELETE |`http://localhost:3000/api/meetings/{meetingid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingdelete)|
