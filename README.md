@@ -34,16 +34,16 @@ Add the following code to the `.env` file, and insert your Zoom JWT App's API Ke
 Save and Close `.env`
 
 Start the Server
+
 `npm start`
-
-### OR
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Usage
 
+### Making Requests
+You can send Get, Post, Patch, and Delete requests to the endpoints listed. If any path parameters are required you must provide them.
+
 ### Request Body
-This application forwards the `Body` of the request to the appropriate Zoom endpoint. Follow the requirements of the Zoom API to create the `Body` of any request
+This application forwards the `Body` of the request to the appropriate Zoom endpoint. Follow the requirements of the [Zoom API](https://marketplace.zoom.us/docs/api-reference/introduction) to create the `Body` of any request
 
 ### Token
 | Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
