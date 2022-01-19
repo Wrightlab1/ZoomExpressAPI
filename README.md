@@ -68,3 +68,8 @@ This application forwards the `Body` of the request to the appropriate Zoom endp
 | Get a Meeting    |GET    |`http://localhost:3000/api/meetings/{meetingid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meeting)     |
 | Update a Meeting |PATCH  |`http://localhost:3000/api/meetings/{meetingid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingupdate)      |
 | Delete a Meeting |DELETE |`http://localhost:3000/api/meetings/{meetingid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingdelete)|
+| Add a Meeting Registrant |POST |`http://localhost:3000/api/meetings/{meetingid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingregistrantcreate)|
+| Delete a Meeting Registrant |DELETE |`http://localhost:3000/api/meetings/{meetingid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingregistrantdelete)|
+| List Meeting Registrants |GET |`http://localhost:3000/api/meetings/{meetingid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingregistrants)|
+| Get a Meeting Registrant |GET |`http://localhost:3000/api/meetings/{meetingid}/registrants/{registrantid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingregistrantget)|
+
