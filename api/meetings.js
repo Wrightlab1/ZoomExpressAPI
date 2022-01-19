@@ -41,4 +41,26 @@ router.delete('/:meetingid', function (req, res) {
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
+
+//Add a meeting Registrant
+router.post('/:meetingid/registrants', function (req, res) {
+  api_helper.make_API_call(`/users/${req.meetingid}`, 'POST', data)
+  .then(result => res.status(200).send(result))
+  .catch(err => res.status(500).send(err));
+})
+
+//Delete a Meeting Registrant
+router.delete('/:meetingid/registrants', function (req, res) {
+  api_helper.make_API_call(`/users/${req.meetingid}`, 'DELETE', data)
+  .then(result => res.status(200).send(result))
+  .catch(err => res.status(500).send(err));
+})
+
+//List Meeting Registrants
+router.get('/:meetingid/registrants', function (req, res) {
+  api_helper.make_API_call(`/users/${req.meetingid}`, 'GET', data)
+  .then(result => res.status(200).send(result))
+  .catch(err => res.status(500).send(err));
+})
+
 module.exports = router;
