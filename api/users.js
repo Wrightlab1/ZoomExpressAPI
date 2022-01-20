@@ -3,6 +3,7 @@ const api_helper = require('../API_Helper')
 var router = express.Router()
 const bodyParser = require('body-parser');
 
+
 //middleware
 router.use(function timelog (req, res, next) {
   console.log('Time: ', Date.now())
@@ -47,4 +48,10 @@ router.delete('/:userid', function (req, res) {
   .catch(err => res.status(500).send(err));
 })
 
+//Get a User Token
+router.get('/:userid/token/:type', function (req, res) {
+  api_helper.make_API_call(`/users/${req.params.userid}/token?type=${req.params.type}`, 'GET')
+  .then(result => res.status(200).send(result))
+  .catch(err => res.status(500).send(err));
+})
 module.exports = router;
