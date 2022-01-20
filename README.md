@@ -46,9 +46,18 @@ You can send Get, Post, Patch, and Delete requests to the endpoints listed. If a
 This application forwards the `Body` of the request to the appropriate Zoom endpoint. Follow the requirements of the [Zoom API](https://marketplace.zoom.us/docs/api-reference/introduction) to create the `Body` of any request
 
 ### Token
+Get a JSON Web Token used to authenticate to the [Zoom API](https://marketplace.zoom.us/docs/api-reference/introduction)
+
 | Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
 | ------------- |-------|----------------------------------------------------------|--------------------------------------------------------------------------|
 | Get JWT Token |GET    |`http://localhost:3000/api/token`                         |(https://marketplace.zoom.us/docs/api-reference/using-zoom-apis#using-jwt)|
+
+### Signature
+Get a signature used to init the [Zoom WebSDK](https://marketplace.zoom.us/docs/sdk/native-sdks/web)
+
+| Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
+| ------------- |-------|----------------------------------------------------------|--------------------------------------------------------------------------|
+| Get Signature |GET    |`http://localhost:3000/api/signature/{meetingid}/{roleid}`|(https://marketplace.zoom.us/docs/api-reference/using-zoom-apis#using-jwt)|
 
 ### Users
 

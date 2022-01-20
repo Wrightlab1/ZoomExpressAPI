@@ -5,6 +5,7 @@ const users = require('./api/users.js')
 const meetings = require('./api/meetings')
 const webinars = require('./api/webinars')
 const token = require('./api/token.js')
+const signature = require('./api/signature.js')
 
 
 const app= express()
@@ -17,6 +18,7 @@ app.use('/api/users', users)
 app.use('/api/meetings', meetings)
 app.use('/api/webinars', webinars)
 app.use('/api/token', token)
+app.use('/api/signature', signature)
 
 //Connect DB
 mongoose.connect(process.env.DB_STRING)
