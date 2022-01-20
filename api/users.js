@@ -19,11 +19,9 @@ router.use(bodyParser.json({ extended: true }));
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
-//Get  a User http://localhost:3000/api/users/?id={userID}}
-  router.get('/:id', function (req, res) {
-    const id = req.params.id
-    console.log(id)
-    api_helper.make_API_call(`/users/${id}`, 'GET')
+//Get  a User http://localhost:3000/api/users/{userID}
+  router.get('/:userid', function (req, res) {
+    api_helper.make_API_call(`/users/${req.params.userid}`, 'GET')
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
@@ -42,10 +40,9 @@ router.use(bodyParser.json({ extended: true }));
     .catch(err => res.status(500).send(err));
   })
 //Delete a User http://localhost:3000/api/users/{userID}}
-router.delete('/:id', function (req, res) {
-  const data = req.body
-  const id = req.params.id
-  api_helper.make_API_call(`/users/${id}?action=delete`, 'DELETE', data)
+router.delete('/:userid', function (req, res) {
+  const id = req.params.userid
+  api_helper.make_API_call(`/users/${id}?action=delete`, 'DELETE')
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })

@@ -15,14 +15,14 @@ router.use(bodyParser.json({ extended: true }));
 
 //Get a Meeting
 router.get('/:meetingid', function (req, res) {
-  api_helper.make_API_call(`/users/${req.meetingid}/meetings`, 'GET', data)
+  api_helper.make_API_call(`/users/${req.params.meetingid}/meetings`, 'GET', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
 //Create a Meeting
 router.post('/:userid', function (req, res) {
   const data = req.body
-  api_helper.make_API_call(`/users/${req.userid}/meetings`, 'POST', data)
+  api_helper.make_API_call(`/users/${req.params.userid}/meetings`, 'POST', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
@@ -30,42 +30,42 @@ router.post('/:userid', function (req, res) {
 //Update a Meeting
 router.patch('/:meetingid', function (req, res) {
   const data = req.body
-  api_helper.make_API_call(`/users/${req.meetingid}`, 'PATCH', data)
+  api_helper.make_API_call(`/users/${req.params.meetingid}`, 'PATCH', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
 
 //Delete a Meeting
 router.delete('/:meetingid', function (req, res) {
-  api_helper.make_API_call(`/users/${req.meetingid}`, 'DELETE', data)
+  api_helper.make_API_call(`/users/${req.params.meetingid}`, 'DELETE', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
 
 //Add a meeting Registrant
 router.post('/:meetingid/registrants', function (req, res) {
-  api_helper.make_API_call(`meetings/${req.meetingid}`, 'POST', data)
+  api_helper.make_API_call(`meetings/${req.params.meetingid}/registrants`, 'POST', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
 
 //Delete a Meeting Registrant
-router.delete('/:meetingid/registrants', function (req, res) {
-  api_helper.make_API_call(`meetings/${req.meetingid}`, 'DELETE', data)
+router.delete('/:meetingid/registrants/:registrantid', function (req, res) {
+  api_helper.make_API_call(`meetings/${req.params.meetingid}/registrants/${req.params.registrantid}`, 'DELETE', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
 
 //List Meeting Registrants
 router.get('/:meetingid/registrants', function (req, res) {
-  api_helper.make_API_call(`meetings/${req.meetingid}/registrants`, 'GET', data)
+  api_helper.make_API_call(`meetings/${req.params.meetingid}/registrants`, 'GET', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
 
 //Get a Meeting Registrant
 router.get('/:meetingid/registrants/:registrantid', function (req, res) {
-  api_helper.make_API_call(`meetings/${req.meetingid}/${req.registrantid}`, 'GET', data)
+  api_helper.make_API_call(`meetings/${req.params.meetingid}/registrants/${req.params.registrantid}`, 'GET', data)
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
