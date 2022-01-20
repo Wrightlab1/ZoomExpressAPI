@@ -68,6 +68,7 @@ Get a signature used to init the [Zoom WebSDK](https://marketplace.zoom.us/docs/
 | Get a User    |GET    |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/user)      |
 | Update a User |PATCH  |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userupdate)|
 | Delete a User |DELETE |`http://localhost:3000/api/users/{userID}?action=delete`  |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userdelete)|
+| Get User Token|GET    |`http://localhost:3000/api/users/{userID}/token/{type }`  |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/usertoken)|
 
 
 ### Meetings
