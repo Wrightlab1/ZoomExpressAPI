@@ -21,7 +21,7 @@ app.use('/api/token', token)
 app.use('/api/signature', signature)
 
 //Connect DB
-mongoose.connect(process.env.DB_STRING)
+mongoose.connect(process.env.DB_STRING, {autoIndex: false})
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error: "));

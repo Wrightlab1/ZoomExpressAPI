@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const https = require('https')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
-const request = require('./schemas/requests')
+const dbrequest = require('./schemas/requests')
+const dbresponse = require('./schemas/response')
 
 
 
@@ -37,6 +38,8 @@ return new Promise(function (resolve, reject) {
     if (res.statusCode < 200 || res.statusCode >= 300) {
       return reject(new Error('statusCode=' + res.statusCode));
   }
+   
+
   // cumulate data
   var body = [];
   res.on('data', function(chunk) {
@@ -47,8 +50,9 @@ return new Promise(function (resolve, reject) {
   res.on('end', function() {
       try {
           body = JSON.parse(Buffer.concat(body).toString());
+          
           //write response to db
-          const resBody = new request({
+          const resBody = new dbresponse({
             'timeStamp' : Date.now(),
             'API_response' : body
           })

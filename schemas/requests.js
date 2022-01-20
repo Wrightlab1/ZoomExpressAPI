@@ -1,8 +1,9 @@
 const mongoose = require('mongoose')
 
-const requestsSchema = new mongoose.Schema({
-  timeStamp: String,
-  API_response: Object
+
+const requestSchema = new mongoose.Schema({
+  timeStamp : String,
+  API_request : Object
 })
 
-module.exports = mongoose.model("requests", requestsSchema)
+module.exports = mongoose.model("dbrequest", requestSchema)
