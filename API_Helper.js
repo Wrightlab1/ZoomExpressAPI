@@ -1,7 +1,9 @@
 const { response } = require('express')
+const mongoose = require('mongoose')
 const https = require('https')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
+const request = require('./schemas/requests')
 
 
 
@@ -40,10 +42,17 @@ return new Promise(function (resolve, reject) {
   res.on('data', function(chunk) {
       body.push(chunk);
   });
+  
   // resolve on end
   res.on('end', function() {
       try {
           body = JSON.parse(Buffer.concat(body).toString());
+          //write response to db
+          const resBody = new request({
+            'timeStamp' : Date.now(),
+            'API_response' : body
+          })
+          resBody.save().then(() => console.log('response added to db'));
       } catch(e) {
           reject(e);
       }
@@ -65,5 +74,6 @@ if (data) {
 // IMPORTANT
 
 
+req.end();
 
-req.end();})}}
+})}}
