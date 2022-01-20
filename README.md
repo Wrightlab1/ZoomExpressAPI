@@ -57,7 +57,7 @@ Get a signature used to init the [Zoom WebSDK](https://marketplace.zoom.us/docs/
 
 | Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
 | ------------- |-------|----------------------------------------------------------|--------------------------------------------------------------------------|
-| Get Signature |GET    |`http://localhost:3000/api/signature/{meetingid}/{roleid}`|(https://marketplace.zoom.us/docs/api-reference/using-zoom-apis#using-jwt)|
+| Get Signature |GET    |`http://localhost:3000/api/signature/{meetingid}/{roleid}`|(https://marketplace.zoom.us/docs/sdk/native-sdks/web/signature#signature-code-samples)|
 
 ### Users
 
