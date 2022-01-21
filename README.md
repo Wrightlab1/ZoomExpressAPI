@@ -94,3 +94,20 @@ Get a signature used to init the [Zoom WebSDK](https://marketplace.zoom.us/docs/
 | Delete a Webinar Registrant |DELETE |`http://localhost:3000/api/webinars/{webinarid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarregistrantdelete)|
 | List Webinar Registrants |GET |`http://localhost:3000/api/webinars/{webinarid}/registrants`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarregistrants)|
 | Get a Webinar Registrant |GET |`http://localhost:3000/api/webinars/{webinarid}/registrants/{registrantid}`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/webinars/webinarregistrantget)|
+
+
+## Logging
+
+This app uses [mongoose](https://mongoosejs.com/) to send logs to [mongodb](https://www.mongodb.com/).
+Log Format
+
+
+|value        |type  |description             |
+|-------------|------|------------------------|
+|timeStamp    |Number|unix epoch timestamp    |
+|path         |String|request path to Zoom API|
+|method       |String|http request method     |
+|statusCode   |Number|http status code        |
+|statusMessage|String|error messages if any   |
+|headers      |Object|http response headers   |
+|body         |Object|http response body      |
