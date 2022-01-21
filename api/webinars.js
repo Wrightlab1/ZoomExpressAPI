@@ -6,25 +6,6 @@ const mongoose = require('mongoose')
 const dbrequest = require('../schemas/requests')
 const dbresponse = require('../schemas/response')
 
-//middleware
-router.use(function timelog (req, res, next) {
-  console.log('Time: ', Date.now())
-  //write request to db
-  const reqBody = new dbrequest({
-    'timeStamp' : Date.now(),
-    'API_request' : flatted.stringify(req)
-  })
-  reqBody.save().then(() => console.log('request added to db'));
-  //write response to db
-  const resBody = new dbresponse({
-    'timeStamp' : Date.now(),
-    'API_response' : flatted.stringify(res)
-  })
-  resBody.save().then(() => console.log('response added to db'));
-  next()
-})
-
-router.use(bodyParser.json({ extended: true }));
 
 //defind the Webinars route
 

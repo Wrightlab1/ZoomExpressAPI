@@ -4,11 +4,7 @@ var router = express.Router()
 const jwt = require('jsonwebtoken')
 const crypto = require('crypto')
 
-//middleware
-router.use(function timelog (req, res, next) {
-  console.log('Time: ', Date.now())
-  next()
-})
+
 
 
 //defind the signature route
