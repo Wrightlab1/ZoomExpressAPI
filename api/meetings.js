@@ -3,8 +3,6 @@ const api_helper = require('../API_Helper')
 var router = express.Router()
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
-const dbrequest = require('../schemas/requests')
-const dbresponse = require('../schemas/response')
 
 
 

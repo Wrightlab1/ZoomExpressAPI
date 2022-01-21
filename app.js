@@ -12,8 +12,6 @@ const app= express()
 const port = 3000 || process.env.PORT
 
 
-//Routes
-
 //include routes
 app.use('/api/users', users)
 app.use('/api/meetings', meetings)
