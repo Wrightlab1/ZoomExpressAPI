@@ -28,5 +28,5 @@ db.once("open", function () {
   console.log("DB Connected successfully");
 });
 
-
+//Create Server
 app.listen(port, () => {console.log(`App is listening on port ${port}`)})

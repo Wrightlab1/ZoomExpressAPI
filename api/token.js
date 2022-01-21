@@ -31,7 +31,7 @@ const requestSchema = require('../schemas/requests.js')
           request.save(function (err) {
             if (err) return handleError(err);
           });
-
+    //return token
     res.json({token : token})
   })
 

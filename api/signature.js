@@ -32,6 +32,7 @@ router.get('/:meetingid/:roleid', function (req, res) {
           request.save(function (err) {
             if (err) return handleError(err);
           });
+  //return signature
   res.json({signature : signature})
 })
 

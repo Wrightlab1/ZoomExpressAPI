@@ -21,6 +21,7 @@ module.exports = {
 
 //SEND REQUEST
   
+//Configure request options
 const options = {
   host: 'api.zoom.us',
   path: `/v2${path}`,
@@ -31,6 +32,7 @@ const options = {
   }
 
 }
+//send Request
 return new Promise(function (resolve, reject) {
   const req = https.request(options, res => {
     // reject on bad status
@@ -88,6 +90,7 @@ req.on('error', function(err) {
   reject(err);
 });
 
+//If Body is defined add body to request
 if (data) {
   const postData = JSON.stringify(data);
   req.write(postData);
