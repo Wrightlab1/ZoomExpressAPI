@@ -4,10 +4,12 @@ const mongoose = require('mongoose')
 
 const requestSchema = new mongoose.Schema({
   timeStamp : String,
-  url : String,
-  params : Object,
-  headers : Object,
-  API_request : Object
+  path : String,
+  method : String,
+  statusCode : Number,
+  statusMessage : String,
+  body : Object
 })
 
-module.exports = mongoose.model("dbrequest", requestSchema)
+module.exports = mongoose.model("requestSchema", requestSchema)
+
