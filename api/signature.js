@@ -22,7 +22,7 @@ router.get('/:meetingid/:roleid', function (req, res) {
           //Create Model instance
           const request = new requestSchema({
             timeStamp : Date.now(),
-            path : `/signature/${req.path}`,
+            path : `/signature${req.path}`,
             method : req.method,
             statusCode : res.statusCode,
             statusMessage : res.statusMessage,
