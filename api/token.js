@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 
 
 
-//defind the users route
+//define the token route
 
   router.get('/', function (req, res) {
     //Create JWT

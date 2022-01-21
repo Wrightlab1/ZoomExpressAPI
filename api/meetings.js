@@ -8,7 +8,7 @@ const dbresponse = require('../schemas/response')
 
 
 
-//defind the Meetings route
+//define the Meetings route
 
 //Get a Meeting
 router.get('/:meetingid', function (req, res) {

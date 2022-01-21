@@ -12,7 +12,7 @@ const dbresponse = require('../schemas/response')
 
 router.use(bodyParser.json({ extended: true }));
 
-//defind the users route
+//define the users route
 
 //List Users
   router.get('/', function (req, res) {

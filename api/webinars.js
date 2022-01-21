@@ -7,7 +7,7 @@ const dbrequest = require('../schemas/requests')
 const dbresponse = require('../schemas/response')
 
 
-//defind the Webinars route
+//define the Webinars route
 
 //Get a Webinar
 router.get('/:webinarid', function (req, res) {

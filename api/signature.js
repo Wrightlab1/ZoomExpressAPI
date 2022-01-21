@@ -7,7 +7,7 @@ const crypto = require('crypto')
 
 
 
-//defind the signature route
+//define the signature route
 
 router.get('/:meetingid/:roleid', function (req, res) {
   //Create Signature
