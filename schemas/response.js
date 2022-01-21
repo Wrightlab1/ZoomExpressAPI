@@ -1,11 +1,16 @@
 const mongoose = require('mongoose')
 
 const responseSchema = new mongoose.Schema({
-  timeStamp: String,
-  statusCode: String,
+  timeStamp : Number,
+  path : String,
+  method: String,
+  statusCode: Number,
   statusMessage: String,
-  API_response: Object
+  headers: Object,
+  body: Object
 })
 
 
-module.exports = mongoose.model("dbresponse", responseSchema)
+module.exports = mongoose.model("responseSchema", responseSchema)
+
+

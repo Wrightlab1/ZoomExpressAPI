@@ -1,6 +1,8 @@
 const { response } = require('express')
+const mongoose = require('mongoose')
 const https = require('https')
 const jwt = require('jsonwebtoken')
+const responseSchema = require('./schemas/response.js')
 require('dotenv').config()
 
 
@@ -49,7 +51,31 @@ return new Promise(function (resolve, reject) {
           body = JSON.parse(Buffer.concat(body).toString());
           
           //write response to db
-          
+
+          //Create Model instance
+          const response = new responseSchema({
+            timeStamp : Date.now(),
+            path : req.path,
+            method : req.method,
+            statusCode : res.statusCode,
+            statusMessage : res.statusMessage,
+            headers : JSON.stringify(res.headers),
+            body : JSON.stringify(body)
+          })
+          //Save the Model Instance
+          response.save(function (err) {
+            if (err) return handleError(err);
+          });
+          //Log to terminal
+          console.log(`
+            Path: ${req.path}, 
+            Method: ${req.method}, 
+            Status Code: ${res.statusCode}, 
+            Status Message: ${res.statusMessage},
+            Headers: ${JSON.stringify(res.headers)},
+            Body: ${JSON.stringify(body)}
+            `)
+
       } catch(e) {
           reject(e);
       }
