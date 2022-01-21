@@ -99,7 +99,8 @@ Get a signature used to init the [Zoom WebSDK](https://marketplace.zoom.us/docs/
 ## Logging
 
 This app uses [mongoose](https://mongoosejs.com/) to send logs to [mongodb](https://www.mongodb.com/).
-Log Format
+
+### Log Format
 
 
 |value        |type  |description             |
