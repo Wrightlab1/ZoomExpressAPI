@@ -61,14 +61,15 @@ Get a signature used to init the [Zoom WebSDK](https://marketplace.zoom.us/docs/
 
 ### Users
 
-| Endpoint      |Method | URL                                                      | Zoom Documentation                                                       |
-| ------------- |-------|----------------------------------------------------------|--------------------------------------------------------------------------|
-| Create a User |POST   |`http://localhost:3000/api/users`                         |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/usercreate)|
-| List Users    |GET    |`http://localhost:3000/api/users`                         |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/users)     |
-| Get a User    |GET    |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/user)      |
-| Update a User |PATCH  |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userupdate)|
-| Delete a User |DELETE |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userdelete)|
-| Get User Token|GET    |`http://localhost:3000/api/users/{userID}/token`          |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/usertoken)|
+| Endpoint             |Method | URL                                                      | Zoom Documentation                                                       |
+| ---------------------|-------|----------------------------------------------------------|--------------------------------------------------------------------------|
+| Create a User        |POST   |`http://localhost:3000/api/users`                         |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/usercreate)|
+| List Users           |GET    |`http://localhost:3000/api/users`                         |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/users)     |
+| Get a User           |GET    |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/user)      |
+| Update a User        |PATCH  |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userupdate)|
+| List a Users Meetings|GET    |`http://localhost:3000/api/users/{userID}/meetings`       |(https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetings)|
+| Delete a User        |DELETE |`http://localhost:3000/api/users/{userID}`                |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/userdelete)|
+| Get User Token       |GET    |`http://localhost:3000/api/users/{userID}/token`          |(https://marketplace.zoom.us/docs/api-reference/zoom-api/users/usertoken)|
 
 
 ### Meetings

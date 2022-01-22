@@ -4,8 +4,6 @@ var router = express.Router()
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
 
-
-
 //define the Meetings route
 
 //Get a Meeting
