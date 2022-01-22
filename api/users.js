@@ -51,4 +51,11 @@ router.get('/:userid/token', function (req, res) {
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
+
+//List Meetings
+router.get('/:userid/meetings', function (req, res) {
+  api_helper.make_API_call(`/users${req.url}`, 'GET')
+  .then(result => res.status(200).send(result))
+  .catch(err => res.status(500).send(err));
+})
 module.exports = router;

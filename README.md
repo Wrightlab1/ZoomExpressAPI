@@ -42,6 +42,9 @@ Start the Server
 ### Making Requests
 You can send Get, Post, Patch, and Delete requests to the endpoints listed. If any path parameters are required you must provide them.
 
+### Query Strings
+You can add query strings to the end of hte request path. These will be forwarded to the Zoom API
+
 ### Request Body
 This application forwards the `Body` of the request to the appropriate Zoom endpoint. Follow the requirements of the [Zoom API](https://marketplace.zoom.us/docs/api-reference/introduction) to create the `Body` of any request
 
