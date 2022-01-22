@@ -14,13 +14,13 @@ router.use(bodyParser.json({ extended: true }));
 
 //List Users
   router.get('/', function (req, res) {
-    api_helper.make_API_call('/users', 'GET')
+    api_helper.make_API_call(`/users${req.url}`, 'GET')
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
 //Get  a User http://localhost:3000/api/users/{userID}
   router.get('/:userid', function (req, res) {
-    api_helper.make_API_call(`/users/${req.params.userid}`, 'GET')
+    api_helper.make_API_call(`/users${req.url}`, 'GET')
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
@@ -34,7 +34,7 @@ router.use(bodyParser.json({ extended: true }));
 //Update a User http://localhost:3000/api/users/{userID}}
   router.patch('/:id', function (req, res) {
     const data = req.body
-    api_helper.make_API_call(`/users/${req.params.id}`, 'PATCH', data)
+    api_helper.make_API_call(`/users${req.url}`, 'PATCH', data)
     .then(result => res.status(200).send(result))
     .catch(err => res.status(500).send(err));
   })
@@ -46,8 +46,8 @@ router.delete('/:userid', function (req, res) {
 })
 
 //Get a User Token
-router.get('/:userid/token/:type', function (req, res) {
-  api_helper.make_API_call(`/users/${req.params.userid}/token?type=${req.params.type}`, 'GET')
+router.get('/:userid/token', function (req, res) {
+  api_helper.make_API_call(`/users${req.url}`, 'GET')
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
