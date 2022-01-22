@@ -1,5 +1,6 @@
 var express = require('express')
 const mongoose = require('mongoose')
+const querystring = require('querystring')
 const api_helper = require('../API_Helper')
 var router = express.Router()
 const bodyParser = require('body-parser');
@@ -39,8 +40,7 @@ router.use(bodyParser.json({ extended: true }));
   })
 //Delete a User http://localhost:3000/api/users/{userID}}
 router.delete('/:userid', function (req, res) {
-  const id = req.params.userid
-  api_helper.make_API_call(`/users/${id}?action=delete`, 'DELETE')
+  api_helper.make_API_call(`/users${req.url}`, 'DELETE')
   .then(result => res.status(200).send(result))
   .catch(err => res.status(500).send(err));
 })
